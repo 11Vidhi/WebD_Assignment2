@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="port.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .portfolio-item {
+            margin: 20px 0;
+        }
+        @media only screen 
+        and (max-width: 375px) {
+            .container {
+                width: 300px;
+                height: 300px;
+            }
+            .portfolio-item{
+                display: absolute;
+                width: 300px;
+                height: 300px;
+            }        
+            .Random Image{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-item">
+            <h2>Project 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa veritatis eum fugit, autem id molestias nesciunt aspernatur vel quasi blanditiis consequatur deleniti sapiente delectus reiciendis. Illo, impedit. Debitis, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid doloribus, magni suscipit excepturi, beatae ab ullam quam accusamus repudiandae dignissimos doloremque iusto. Numquam debitis ullam temporibus veniam odio modi.</p>
+            <img src="01.jpg" alt="Random Image">
+            <a href="project1.html">View Project</a>
+        </div>
+        <div class="portfolio-item">
+            <h2>Project 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas soluta quasi! Veniam natus non amet reprehenderit temporibus! Modi sunt quam similique vel velit inventore suscipit dolorum facilis eligendi voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium quas commodi omnis asperiores, ipsum unde dolore voluptate similique. Vitae repudiandae neque nobis alias eaque dignissimos doloribus? Mollitia, nesciunt quo?</p>
+            <img src="01.jpg" alt="Random Image">
+            <a href="project2.html">View Project</a>
+        </div>
+    </div>
+</body>
+</html>

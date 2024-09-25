@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Certifications</h1>
+    </header>
+<div <div class="image-container">
+    <img src="certi/1.png" alt="Image 1" class="small-image">
+    <img src="certi/2.jpg" alt="Image 2" class="small-image">
+    <img src="certi/3.jpg" alt="Image 3" class="small-image">
+    <img src="certi/4.jpg" alt="Image 4" class="small-image">
+</div>
+<div class="large-image-container" id="largeImageContainer">
+    <img src="" alt="Large Image" class="large-image">
+</div>
+</div>
+    <script>
+var smallImages = document.querySelectorAll('.small-image');
+var largeImageContainer = document.getElementById('largeImageContainer');
+var largeImage = document.querySelector('.large-image');
+
+smallImages.forEach(function(smallImage) {
+    smallImage.addEventListener('mouseover', function() {
+        largeImage.src = this.src; /* Set the source of the large image to the source of the small image */
+        largeImageContainer.style.display = 'flex'; /* Show the large image container */
+    });
+    
+    smallImage.addEventListener('click', function() {
+        largeImage.src = this.src; 
+        largeImageContainer.style.display = 'flex';
+    });
+});
+</script>
+    
+</body>
+</html>
